@@ -125,6 +125,16 @@ Segurança - Protege informações e funcionalidades contra acesso não autoriza
 
 Diante disso, nossa aplicação tem como meta de desenvolvimento ser capaz de cumprir todos esses requisitos de qualidade de software para que seus stakeholders sejam corretamente satisfeitos.
 
+# Template Padrão da Aplicação
+# Programação de Funcionalidades
+## Login do Usuario (Dono do restaurante)
+O usuário poderá realizar o login e fazer o CRUD de seus produtos, podendo editar campos como preço, podendo remover e arquivar esses produtos.	
+## Acompanhar pedido (Dono do restaurante e cliente)
+Tanto o usuário quando o cliente terá acesso a tela para acompanhar seu pedido, podendo ver o status desse pedido como: ANALISE, EM PREPARO, SAIU PARA ENTREGA, ENTREGUE.
+A única diferença do usuário para o cliente, é que o usuário (dono do restaurante) poderá atualizar esse status do pedido.
+## Criar um pedido (cliente)
+Após escolher seus produtos na tela inicial, o cliente poderá ir para o carrinho e prosseguir com o pedido, que irá consultar no serviço pelo telefone se ele já é cadastrado, caso não, irá informar seus dados sobre sua localização. Após isso ele irá escolher o método de pagamento para acertar com o motoboy quando o pedido chegar.
+
 
 <!--
 # Projeto de Interface
