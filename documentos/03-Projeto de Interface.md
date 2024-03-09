@@ -1,5 +1,6 @@
 # Projeto de Interface
 ## Diagrama de Fluxo
+![image]([https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t4-pmv-ads-2024-1-e5-projganajo/assets/16859514/6051fdd1-9c5a-4a64-845e-15ff9f3a47e4](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t4-pmv-ads-2024-1-e5-projganajo/blob/main/documentos/img/Ganajo-user-flow.jpg))
 ## Wireframes
 
 # Arquitetura da Solução
