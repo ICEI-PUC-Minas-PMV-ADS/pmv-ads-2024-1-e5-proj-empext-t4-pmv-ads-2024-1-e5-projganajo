@@ -6,6 +6,7 @@
   ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t4-pmv-ads-2024-1-e5-projganajo/blob/main/documentos/img/home-cardapio.png)
   # Carrinho
   ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t4-pmv-ads-2024-1-e5-projganajo/blob/main/documentos/img/carrinho.png)
+  ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t4-pmv-ads-2024-1-e5-projganajo/blob/main/documentos/img/carrinho-obs.png)
   # Informações da Entrega
   ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t4-pmv-ads-2024-1-e5-projganajo/blob/main/documentos/img/entrega-form-inform.png)
   # Forma de Pagamento
