@@ -2,6 +2,9 @@
 ## Diagrama de Fluxo
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t4-pmv-ads-2024-1-e5-projganajo/blob/main/documentos/img/Ganajo-user-flow.jpg)
 ## Wireframes
+  #Home Cardapio
+  ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t4-pmv-ads-2024-1-e5-projganajo/blob/main/documentos/img/home-cardapio.png)
+
 
 # Arquitetura da Solução
 Pré-requisitos: LINK DO PROJETO DE INTERFACE AQUI
