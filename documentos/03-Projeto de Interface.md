@@ -20,7 +20,6 @@
 
 
 # Arquitetura da Solução
-Pré-requisitos: LINK DO PROJETO DE INTERFACE AQUI
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t4-pmv-ads-2024-1-e5-projganajo/assets/16859514/6051fdd1-9c5a-4a64-845e-15ff9f3a47e4)
 
 
