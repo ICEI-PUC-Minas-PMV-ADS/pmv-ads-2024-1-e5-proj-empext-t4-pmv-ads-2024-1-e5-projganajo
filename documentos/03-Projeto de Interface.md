@@ -110,7 +110,7 @@ EF Core
 Minimal API
 ## Hospedagem
 
-O programa usará a aplicação de uma MINIMAL API em .NET e podendo, a depender da evolução do projeto, ser migrado para uma estrutura de back-end mais moderna (Creational and Structutal Patterns) e o uso de injeções de dependência em todo o escopo. O planejamento é hospedar o back-end na infraestrutura local de um participante do grupo.
+A aplicação usará uma MINIMAL API em .NET e podendo, a depender da evolução do projeto, ser migrado para uma estrutura de back-end mais moderna (Creational and Structutal Patterns) e o uso de injeções de dependência em todo o escopo. O planejamento é hospedar o back-end na infraestrutura local de um participante do grupo.
 
 ## Qualidade de Software
 
