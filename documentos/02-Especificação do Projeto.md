@@ -59,10 +59,15 @@ O acompanhamento do pedido, embora disponível, pode ser aprimorado para oferece
 
 A ausência da opção de retirada no local pode resultar em tempos de espera mais longos para os clientes que residem nas proximidades do estabelecimento. Oferecer essa opção pode proporcionar uma alternativa conveniente e econômica.
 
+### Project Model
+
+![image](./img/project-model.png)
+
 ## Indicadores de Desempenho
 Os indicadores de desempenho são medições e avaliações dentro do fluxo, que ajudam a direcionar os processos e auxiliar as pessoas em relação aos objetivos e metas traçados no planejamento estratégico de um projeto. 
 
-(ADD IMAGEM)
+![image](./img/img-indicadores.png)
+
 ## Requisitos
  
 |Requisitos Funcionais | Descrição  | Prioridade | 
