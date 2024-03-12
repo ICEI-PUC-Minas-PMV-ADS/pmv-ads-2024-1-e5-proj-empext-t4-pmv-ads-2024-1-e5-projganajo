@@ -30,9 +30,14 @@ Assim que a primeira versão do sistema estiver disponível, deverá complementa
 <ol>
 <li><a href="documentos/01-Documentação de Contexto.md"> Documentação de Contexto</a></li>
 <li><a href="documentos/02-Especificação do Projeto.md"> Especificação do Projeto</a></li>
-<li><a href="documentos/03-Projeto de Interface.md"> Projeto de Interface</a></li>
-<li><a href="documentos/04-Testes de Software.md"> Testes de Software</a></li>
-<li><a href="documentos/05-Implantação.md"> Implantação</a></li>
+<li><a href="documentos/03-Metodologia.md"> Metodologia</a></li>
+<li><a href="documentos/04-Projeto de Interface.md"> Projeto de Interface</a></li>
+<li><a href="documentos/05-Arquitetura Da Solução.md"> Arquitetura da Solução</a></li>
+<li><a href="documentos/06-Template Padrão da Aplicação.md"> Template Padrão da Aplicação</a></li>
+<li><a href="documentos/08-Plano e Registro-Testes de Software.md"> Plano e Registro - Testes de Software</a></li>
+<li><a href="documentos/09-Plano e Registro-Testes de Usabilidade.md"> Plano e Registro - Testes de Usabilidade</a></li>
+<li><a href="documentos/10-Implantação.md"> Implantação</a></li>
+<li><a href="documentos/11-Apresentação do Projeto.md"> Apresentação do Projeto</a></li>
 </ol>
 
 # Código
