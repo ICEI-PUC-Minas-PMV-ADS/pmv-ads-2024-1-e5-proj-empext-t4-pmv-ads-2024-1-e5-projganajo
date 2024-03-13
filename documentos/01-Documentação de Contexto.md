@@ -11,12 +11,12 @@ Atualmente, o restaurante enfrenta desafios significativos devido à sua depend�
 Diante desse cenário, o objetivo deste projeto é desenvolver e implementar um sistema de pedidos online personalizado para o restaurante, oferecendo aos clientes uma alternativa similar ao IFood. Este sistema não só proporcionará aos clientes uma experiência de compra simplificada e personalizada, mas também permitirá ao restaurante expandir suas operações de entrega e retirada, aumentando sua base de clientes e maximizando sua eficiência operacional.
  
 ## Objetivos Específicos
- 
-1- Desenvolver uma interface web intuitiva e responsiva para permitir que os clientes naveguem e selecionem os produtos desejados de forma simples e rápida.
-2- Implementar um sistema de cadastro de produtos que permita ao restaurante gerenciar e atualizar facilmente o catálogo de itens disponíveis para compra.
-3 -  Integrar funcionalidades para adicionar informações de entrega, incluindo a possibilidade de o cliente inserir seu endereço e selecionar uma forma de pagamento.
-4 - Estabelecer um sistema de controle de pedidos que receba e processe todas as solicitações dos clientes, registrando os dados do cliente, endereço de entrega e detalhes do pedido.
-5 - Definir uma taxa mínima de entrega de R$ 7,00, garantindo a sustentabilidade financeira do serviço de entrega.
+
+1. Desenvolver uma interface web intuitiva e responsiva para permitir que os clientes naveguem e selecionem os produtos desejados de forma simples e rápida.
+2. Implementar um sistema de cadastro de produtos que permita ao restaurante gerenciar e atualizar facilmente o catálogo de itens disponíveis para compra.
+3.  Integrar funcionalidades para adicionar informações de entrega, incluindo a possibilidade de o cliente inserir seu endereço e selecionar uma forma de pagamento.
+4. Estabelecer um sistema de controle de pedidos que receba e processe todas as solicitações dos clientes, registrando os dados do cliente, endereço de entrega e detalhes do pedido.
+5. Definir uma taxa mínima de entrega de R$ 7,00, garantindo a sustentabilidade financeira do serviço de entrega.
 
 
 ## Justificativa
