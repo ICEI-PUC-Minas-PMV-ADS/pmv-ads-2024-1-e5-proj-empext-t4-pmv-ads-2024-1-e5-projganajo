@@ -17,7 +17,7 @@
 
 
 ## Modelo Fisico
-
+``` SQL
 Table Cliente {
   Id integer [primary key]
   CPF string
@@ -81,7 +81,7 @@ Table Usuario {
   Senha string
   EditadoData datetime
 }
-
+```
 
 Ref: Cliente.RegiaoPostalId > RegiaoPostal.Id
 Ref: Pedido.ClienteId > Cliente.Id
