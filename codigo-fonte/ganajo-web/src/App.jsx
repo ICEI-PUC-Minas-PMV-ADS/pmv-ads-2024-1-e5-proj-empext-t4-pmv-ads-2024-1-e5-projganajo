@@ -1,14 +1,21 @@
 import React from 'react'
-import Navbar from './Navbar/Navbar.tsx';
+import Layout from './Layout/Layout.tsx';
 import Home from './Pages/Home/Home.tsx';
+import { BrowserRouter, Router, Routes, Route } from 'react-router-dom';
 
-const App = () => {
+import IdentificacaoCliente from './Pages/Identificacao/IdentificacaoCliente.tsx';
+
+function App() {
   return (
-    <main>
-        <Navbar/>
-        <Home/>
-    </main>
-  )
+    <BrowserRouter>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/identificacao" element={<IdentificacaoCliente />} />
+        </Routes>
+      </Layout>
+    </BrowserRouter>
+  );
 }
 
 export default App

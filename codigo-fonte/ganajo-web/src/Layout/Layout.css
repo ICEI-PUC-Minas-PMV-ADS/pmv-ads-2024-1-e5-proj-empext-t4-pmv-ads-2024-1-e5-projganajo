@@ -1,0 +1,25 @@
+.layout-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Faz com que o container do layout ocupe a altura mínima da viewport */
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: grid;
+    height: 5rem;
+  }
+  
+  main {
+    padding: 20px;
+    display: grid;
+    grid-row-gap: 20px;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+  }

@@ -1,0 +1,17 @@
+#telefoneHelpBlock {
+    grid-row-gap: 1em;
+}
+
+#tituloCadastro {
+    display: grid;
+}
+
+.box1 {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#stack-form-telefone {
+    display: flex;
+}

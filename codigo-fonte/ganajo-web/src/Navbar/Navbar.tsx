@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <nav>
         <div className='container nav_container'>
-          <a href="index.html" className='nav_logo'>
+          <a href="/" className='nav_logo'>
               <img src={Logo} alt="Logo"/>
           </a>
           <ul className='nav_menu'>
