@@ -36,6 +36,10 @@ nav {
     cursor: pointer;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* HIDE NAV MENU ON TABLETS AND PHONES */
 
 @media screen and (max-width: 1024px){

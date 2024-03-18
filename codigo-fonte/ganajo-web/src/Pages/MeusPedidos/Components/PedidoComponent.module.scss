@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+}
+
+
+.container {
+    padding: 15 20;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    background-color: var(--color-secondary);
+    border-radius: 15px;
+}
+
+.image {
+    width: 5.5rem;
+    height: 5.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+p {
+    line-height: 12px;
+}
+
+.orderInfo {
+    gap: 3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    font-size: 1rem;
+}
+
+.formaPagamento {
+    font-weight: bolder;
+    font-size: 1rem;
+    color: var(--color-primary);
+}
+
+.orangeStyle {
+    font-weight: bolder;
+    font-size: 1rem;
+    color: white;
+    background-color: orange;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.greenStyle {
+    font-weight: bolder;
+    font-size: 1rem;
+    color: white;
+    background-color: green;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.redStyle {
+    font-weight: bolder;
+    font-size: 1rem;
+    color: white;
+    background-color: red;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.primaryColorStyle {
+    font-weight: bolder;
+    font-size: 1rem;
+    color: white;
+    background-color: var(--color-primary);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.greenItemStyle {
+    font-weight: bolder;
+    font-size: 1rem;
+    color: white;
+    background-color: green;
+    padding: 8px;
+    border-radius: 3px;
+    margin: 6px 0px
+}
+
+@media screen and (max-width: 1024px) {
+
+    .image {
+        width: 10rem;
+        height: 10rem;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    .container {
+        padding: 10 15;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        background-color: var(--color-secondary);
+        border-radius: 10px;
+    }
+
+    .orderInfo {
+        gap: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    h2, h3 {
+        text-align: center;
+    }
+
+    .orangeStyle {
+        font-weight: bolder;
+        font-size: 1.5rem;
+        color: white;
+        background-color: orange;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    
+    .greenStyle {
+        font-weight: bolder;
+        font-size: 1.5rem;
+        color: white;
+        background-color: green;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    
+    .redStyle {
+        font-weight: bolder;
+        font-size: 1.5rem;
+        color: white;
+        background-color: red;
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+    .primaryColorStyle {
+        font-weight: bolder;
+        font-size: 1.5rem;
+        color: white;
+        background-color: var(--color-primary);
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+    .formaPagamento {
+        font-weight: bolder;
+        font-size: 1.5rem;
+        color: var(--color-primary);
+    }
+}
