@@ -1,16 +1,25 @@
 import React, { useCallback } from 'react'
 import { Pedido } from '../../../DTOs/Pedido.ts'
-import PedidoItem from './PedidoItem.tsx';
 import styles from './PedidoComponent.module.scss'
 import { FormaPagamento } from '../../../DTOs/FormaPagamento.ts';
-import { StatusPedido } from '../../../DTOs/Status.ts';
 import { Item } from '../../../DTOs/Item.ts';
+import { StatusDropdown } from '../../../Share/StatusDropdown.tsx';
+import { KeyValue } from './../../../DTOs/KeyValue';
 
 interface PedidoProps {
-  Pedido : Pedido
+  Pedido : Pedido,
+  isAdmin : boolean
 }
 
-const PedidoComponent = ({Pedido} : PedidoProps) => {
+const PedidoComponent = ({Pedido, isAdmin} : PedidoProps) => {
+
+  const options : KeyValue[] = [
+    {Id: 0, Value: 'Analise' },
+    {Id: 1, Value: 'Em Preparo' },
+    {Id: 2, Value: 'Saiu Para Entrega' },
+    {Id: 3, Value: 'Entregue' },
+    {Id: 4, Value: 'Negado' }
+  ]
 
   const getTotal = useCallback((items : Item[]) => {
       var value = 0;
@@ -31,23 +40,6 @@ const PedidoComponent = ({Pedido} : PedidoProps) => {
       if(formaPagamento === FormaPagamento.VA)
         return <h1 className={styles.greenStyle}>Vale Alimentação/Refeição</h1>
   }
-
-  function getStatus(statusPedido : StatusPedido){
-    if(statusPedido === StatusPedido.Analise)
-      return <h1 className={styles.orangeStyle}>Análise</h1>
-
-    if(statusPedido === StatusPedido.EmPreparo)
-      return <h1 className={styles.orangeStyle}>Em Preparo</h1>
-
-    if(statusPedido === StatusPedido.Entregue)
-      return <h1 className={styles.greenStyle}>Entregue</h1>
-
-    if(statusPedido === StatusPedido.Negado)
-      return <h1 className={styles.redStyle}>Negado</h1>
-
-    if(statusPedido === StatusPedido.SaiuParaEntrega)
-      return <h1 className={styles.greenStyle}>Saiu para Entrega</h1>
-  } 
 
   return (
     <div className={styles.container}>
@@ -84,7 +76,8 @@ const PedidoComponent = ({Pedido} : PedidoProps) => {
         </div>
         <div>
           <h3 className={styles.primaryColorStyle}>Status do Pedido</h3>
-            <p>{getStatus(Pedido.Status)}</p>
+          <StatusDropdown Disabled={!isAdmin} Options={options} PlaceHolder={'Informe o status do pedido'} Default={{Id: Pedido.Status, Value: Pedido.Status.toString()}}/>
+            
         </div>
     </div>
   )

@@ -1,0 +1,39 @@
+.container {
+    cursor:pointer;
+}
+
+.orangeStyle:hover,
+.greenStyle:hover,
+.redStyle:hover,
+.orangeStyle:focus,
+.greenStyle:focus,
+.redStyle:focus {
+  color: gray;
+}
+
+.orangeStyle {
+    font-weight: bolder;
+    font-size: 1rem;
+    color: white;
+    background-color: orange;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.greenStyle {
+    font-weight: bolder;
+    font-size: 1rem;
+    color: white;
+    background-color: green;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.redStyle {
+    font-weight: bolder;
+    font-size: 1rem;
+    color: white;
+    background-color: red;
+    padding: 5px;
+    border-radius: 5px;
+}

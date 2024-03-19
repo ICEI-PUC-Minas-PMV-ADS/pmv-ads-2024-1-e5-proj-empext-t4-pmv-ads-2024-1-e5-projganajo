@@ -13,7 +13,7 @@ const MeusPedidos = ({isAdmin} : MeusPedidosParams) => {
         <h1 style={{textAlign: 'center'}}>Meus Pedidos</h1>
         <div style={{display: 'flex', flexDirection:'column', gap: '15px'}}>
             {
-                pedidos.map(m => <PedidoComponent Pedido={m}/> )
+                pedidos.map(m => <PedidoComponent Pedido={m} isAdmin={isAdmin}/> )
             }   
         </div>
     </div>
