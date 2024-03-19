@@ -1,10 +1,21 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Logo from '../Assets/ganajo-logo.png';
 import { MdOutlineShoppingCart } from "react-icons/md";
-import Data from './data';
+import commonNavItems from './commonUserNavBarItems.ts';
+import adminNavItens from './adminUserNavBarItems.ts';
 import './Navbar.css';
+import { NavBarLink } from '../DTOs/NavBarLink';
 
 const Navbar = () => {
+
+  const [isAdmin, setIsAdmin] = useState<boolean>();
+  const [navItems, setNavItems] = useState<NavBarLink[]>();
+
+  useEffect(() => {
+    setIsAdmin(true);
+    setNavItems(isAdmin ? adminNavItens : commonNavItems);
+  }, [isAdmin])
+
   return (
     <nav>
         <div className='container nav_container'>
@@ -13,7 +24,7 @@ const Navbar = () => {
           </a>
           <ul className='nav_menu'>
             {
-              Data.map(item => <li key={item.id}><a href={item.link}>{item.title}</a></li>)
+              navItems?.map(item => <li key={item.Id}><a href={item.Link}>{item.Title}</a></li>)
             }
           </ul>
           <button className="theme_icon"><MdOutlineShoppingCart/></button>
