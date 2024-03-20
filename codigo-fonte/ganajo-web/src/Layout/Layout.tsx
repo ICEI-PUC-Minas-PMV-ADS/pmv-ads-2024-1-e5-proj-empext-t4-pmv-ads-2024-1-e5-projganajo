@@ -1,9 +1,7 @@
 
 import Navbar from '../Navbar/Navbar.tsx';
-import Home from '../Pages/Home/Home.tsx';
 import React, { ReactNode } from 'react';
 import './Layout.css'; 
-import { Button } from 'react-bootstrap';
 
 interface LayoutProps {
   children: ReactNode;

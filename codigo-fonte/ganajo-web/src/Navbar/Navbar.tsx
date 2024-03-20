@@ -12,7 +12,7 @@ const Navbar = () => {
   const [navItems, setNavItems] = useState<NavBarLink[]>();
 
   useEffect(() => {
-    setIsAdmin(true);
+    setIsAdmin(false);
     setNavItems(isAdmin ? adminNavItens : commonNavItems);
   }, [isAdmin])
 
@@ -24,7 +24,7 @@ const Navbar = () => {
           </a>
           <ul className='nav_menu'>
             {
-              navItems?.map(item => <li key={item.Id}><a href={item.Link}>{item.Title}</a></li>)
+              navItems?.map(item => <li key={item.Id}><a style={{color: 'white', textDecoration: 'none'}} href={item.Link}>{item.Title}</a></li>)
             }
           </ul>
           <button className="theme_icon"><MdOutlineShoppingCart/></button>

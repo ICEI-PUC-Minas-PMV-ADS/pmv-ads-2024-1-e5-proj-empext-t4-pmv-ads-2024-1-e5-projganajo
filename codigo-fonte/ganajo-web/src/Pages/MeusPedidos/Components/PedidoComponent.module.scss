@@ -14,9 +14,10 @@
     gap: 50px;
     background-color: var(--color-secondary);
     border-radius: 15px;
+    box-shadow: 1px 2px 3px gray;
 }
 
-.image {
+.imageContainer {
     width: 5.5rem;
     height: 5.5rem;
     border-radius: 50%;

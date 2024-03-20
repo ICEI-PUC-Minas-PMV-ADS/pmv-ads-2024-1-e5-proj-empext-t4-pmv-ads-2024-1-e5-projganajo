@@ -1,12 +1,11 @@
-import React, { ReactNode, useState } from 'react';
-import { Button, Col, Form, InputGroup, Row, Stack } from 'react-bootstrap';
+import React, { useState } from 'react';
+import { Button, Col, Form, Row, Stack } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import FormCadastro from './FormularioCadastroCliente.tsx';
 import './identificacao.css';
 import { IMaskInput } from 'react-imask';
 
 const IdentificacaoCliente: React.FC = () => {
-    const [phone, setPhone] = useState('');
     const navigate = useNavigate();
     const [showRegistrationForm, setShowRegistrationForm] = useState(false);
 

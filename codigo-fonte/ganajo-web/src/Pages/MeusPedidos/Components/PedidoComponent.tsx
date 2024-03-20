@@ -45,7 +45,7 @@ const PedidoComponent = ({Pedido, isAdmin} : PedidoProps) => {
     <div className={styles.container}>
         <div className={styles.orderInfo}>
           <div>
-              <img className={styles.image} alt="Indiano kk" src={Pedido.Items[0].Imagem}/>
+              <img className={styles.imageContainer} alt="Indiano kk" src={Pedido.Items[0].Imagem}/>
           </div>
           <div>
               <h3 className={styles.primaryColorStyle}>Informações do Cliente</h3>

@@ -1,0 +1,42 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    background-color: white;
+    padding: 0.4rem;
+    line-height: 0px;
+    text-align: start;
+    word-spacing: 0px;
+    letter-spacing: 0px;
+    cursor: pointer;
+    box-shadow: 1px 2px 3px gray;
+    align-items: center;
+}
+
+img {
+    width: 6rem;
+    height: auto;
+    border-radius: 15%;
+    overflow: hidden;
+}
+
+.nomeStyle {
+    font-weight: 500;
+    text-align: start;
+    font-size: 1.2rem;
+    margin: 0px;
+}
+
+.descricaoStyle {
+    font-weight: 300;
+    text-align: start;
+    font-size: 1rem;
+    margin: 0px;
+}
+
+.valorStyle {
+    font-weight: 600;
+    text-align: start;
+    font-size: 1rem;
+    margin: 10px 0px 0px 0px;
+}
