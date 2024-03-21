@@ -12,7 +12,7 @@ const Navbar = () => {
   const [navItems, setNavItems] = useState<NavBarLink[]>();
 
   useEffect(() => {
-    setIsAdmin(false);
+    setIsAdmin(true);
     setNavItems(isAdmin ? adminNavItens : commonNavItems);
   }, [isAdmin])
 
