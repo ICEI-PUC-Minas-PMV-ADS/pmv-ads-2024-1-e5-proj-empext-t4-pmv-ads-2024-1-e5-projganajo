@@ -4,6 +4,7 @@ import Home from './Pages/Home/Home.tsx';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import IdentificacaoCliente from './Pages/Identificacao/IdentificacaoCliente.tsx';
+import BairrosdeEntrega from './Pages/BairrosDeEntrega/bairrosdeentrega.tsx';
 import MeusPedidos from './Pages/MeusPedidos/MeusPedidos.tsx';
 
 function App() {
@@ -11,7 +12,7 @@ function App() {
   const [isAdmin, setIsAdmin] = useState();
 
   useEffect(() => {
-    setIsAdmin(false);
+    setIsAdmin(true);
   }, [])
 
   
@@ -20,6 +21,7 @@ function App() {
       <Layout>
         <Routes>
           <Route path="/" element={ isAdmin ? <MeusPedidos isAdmin={isAdmin}/> : <Home />} />
+          <Route path="/bairrosdeentrega" element={<BairrosdeEntrega/>} />
           <Route path="/identificacao" element={<IdentificacaoCliente />} />
           {
             !isAdmin ? <Route path="/meuspedidos" element={<MeusPedidos isAdmin={isAdmin}/>}/> : ''
