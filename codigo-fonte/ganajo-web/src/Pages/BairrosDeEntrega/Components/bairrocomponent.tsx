@@ -1,36 +1,41 @@
 import React from 'react';
-import { Bairro } from '../../../DTOs/Bairro.ts';
-import styles from './bairrocomponent.module.scss';
+import { Card, Button } from 'react-bootstrap';
 import { BsPencil, BsTrash } from 'react-icons/bs';
-import { Button, InputGroup, FormControl } from 'react-bootstrap';
+import styles from './bairrocomponent.module.scss'; // Importe o módulo SCSS
+
+import { Bairro } from '../../../DTOs/Bairro';
 
 interface BairroComponentProps {
-    bairro: Bairro;
-    onEdit?: () => void;
-    onDelete?: () => void;
+  bairro: Bairro;
+  onEdit?: () => void;
+  onDelete?: () => void;
 }
 
-const BairroComponent = ({ bairro, onEdit, onDelete }: BairroComponentProps) => {
-    return (
-        <div className={styles.bairroItem}>
-            <div>
-                <h1 className={styles.nomeStyle}>{bairro.Nome}</h1>
-                <p className={styles.idStyle}>ID: {bairro.Id}</p>
-            </div>
-            <div className={styles.iconContainer}>
-                {onEdit && (
-                    <Button variant="link" onClick={onEdit} className={`${styles.editIcon} icon`}>
-                        <BsPencil />
-                    </Button>
-                )}
-                {onDelete && (
-                    <Button variant="link" onClick={onDelete} className={`${styles.deleteIcon} icon`}>
-                        <BsTrash />
-                    </Button>
-                )}
-            </div>
+const BairroComponent: React.FC<BairroComponentProps> = ({ bairro, onEdit, onDelete }) => {
+  return (
+    <Card className={styles['bairro-card']}>
+      <Card.Body className={styles['card-body']}>
+        <div className={styles['content-container']}>
+          <div>
+            <h1 className={styles['bairro-name']}>{bairro.Nome}</h1>
+            <p className={styles['bairro-id']}>ID: {bairro.Id}</p>
+          </div>
+          <div className={styles['icon-container']}>
+            {onEdit && (
+              <Button variant="link" onClick={onEdit} className={`${styles.icon} ${styles['edit-icon']}`}> 
+                <BsPencil />
+              </Button>
+            )}
+            {onDelete && (
+              <Button variant="link" onClick={onDelete} className={`${styles.icon} ${styles['delete-icon']}`}> 
+                <BsTrash />
+              </Button>
+            )}
+          </div>
         </div>
-    );
+      </Card.Body>
+    </Card>
+  );
 };
 
 export default BairroComponent;
