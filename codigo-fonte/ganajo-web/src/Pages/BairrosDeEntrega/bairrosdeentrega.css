@@ -1,0 +1,85 @@
+.bairros-container {
+  padding: 10px;
+  height: 10%;
+}
+
+.search-row,
+.add-bairro-row {
+  margin-bottom: 10px;
+}
+
+.search-col {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.search-col .form-control {
+  margin-right: 10px;
+}
+
+.search-col .btn {
+  flex-shrink: 0;
+}
+
+.add-bairro-col {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add-bairro-col .form-control {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+.add-bairro-col .add-button {
+  background-color: orange;
+  border-color: orange;
+}
+
+.card-row {
+  display: flex; 
+  flex-wrap: wrap;
+}
+
+.bairros-card {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  min-width: 200px; 
+}
+
+.bairros-card .bairro-name {
+  flex-grow: 1; 
+  margin-right: 10px;
+}
+
+.bairros-card .bairro-id {
+  margin-right: 10px;
+}
+
+.bairros-card .edit-icon,
+.bairros-card .delete-icon {
+  cursor: pointer;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+}
+.icon-container .edit-icon {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.icon-container .delete-icon {
+  cursor: pointer;
+}
+.modal-dialog {
+  max-width: 400px;
+}
