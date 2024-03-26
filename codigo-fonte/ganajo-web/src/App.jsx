@@ -13,7 +13,7 @@ function App() {
   const [isAdmin, setIsAdmin] = useState();
 
   useEffect(() => {
-    setIsAdmin(true);
+    setIsAdmin(false);
   }, [])
 
   
