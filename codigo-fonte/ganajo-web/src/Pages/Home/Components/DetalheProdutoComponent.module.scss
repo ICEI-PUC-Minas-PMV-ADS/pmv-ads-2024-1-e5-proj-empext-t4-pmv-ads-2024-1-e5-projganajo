@@ -4,46 +4,110 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Adiciona uma semi-transparência */
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1000; /* Coloca o componente em primeiro plano */
+    z-index: 1000;
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
     width: 80vw;
-    max-width: 600px; /* Defina um valor máximo para o modal */
+    height: 80vh;
     background-color: white;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Adiciona a sombra */
-    padding: 20px;
-    text-align: start;
+
+    @media (min-width: 768px) {
+        flex-direction: row; 
+        background-color: rgb(233, 233, 233);
+    }
 }
 
-img {
+.leftColumn {
     width: 100%;
-    max-width: 200px; /* Defina um tamanho máximo para a imagem */
-    border-radius: 10px; /* Arredonda as bordas da imagem */
+    padding: 20px;
+
+    @media (min-width: 768px) {
+        width: 33%;
+        background-color: white;
+        border-radius: 10px;
+    }
+}
+
+.rightColumn {
+    width: 100%; 
+    padding-left: 10px;
+    padding-right: 10px;
+
+    @media (min-width: 768px) {
+        width: 66%; 
+        background-color: rgb(233, 233, 233);
+    }
+}
+
+.imgDetalhe {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
 .nomeStyle {
     font-weight: 500;
-    text-align: start;
-    font-size: 1.2rem;
-    margin: 0px;
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .descricaoStyle {
     font-weight: 300;
-    text-align: start;
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin: 0px;
 }
 
 .valorStyle {
     font-weight: 600;
-    text-align: start;
     font-size: 1rem;
     margin: 10px 0px 0px 0px;
+}
+
+.observacaoItem {
+    background-color: white;
+    padding: 10px;
+    margin-top: 10px; 
+    border-radius: 5px;
+}
+
+.inputObservacao {
+    width: 100%;
+    height: 25%;
+
+    @media (max-width: 768px) {
+        height: 30%;
+    }
+}
+
+.buttonPedir {
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(34, 34, 34);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 10px;
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+}
+
+.nomeStyle,
+.descricaoStyle,
+.valorStyle {
+    text-align: start;
 }
